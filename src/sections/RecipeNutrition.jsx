@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function RecipeNutrition({ data }) {
 	return (
 		<section className="section nutrition">
