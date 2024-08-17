@@ -1,0 +1,63 @@
+/* Banner */
+.banner {
+	position: relative;
+	width: 100%;
+	border-radius: var(--r-lg);
+	overflow: hidden;
+	aspect-ratio: 1312 / 600;
+}
+.banner > img {
+	opacity: 0;
+	transition: opacity 0.2s ease-out;
+}
+.banner .img-loaded {
+	opacity: 1;
+}
+.banner__skeleton {
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	background-color: var(--rose-50);
+}
+
+/* Preparation */
+.preparation {
+	padding-inline: var(--s-xl);
+	padding-block: var(--s-xl);
+	border-radius: var(--r-sm);
+	background-color: var(--rose-50);
+}
+
+/* Nutrition */
+.nutrition__tabel {
+	width: 100%;
+	border-collapse: collapse;
+}
+.nutrition__tabel tr {
+	border-bottom: 1px solid var(--stone-150);
+}
+
+.nutrition__tabel td {
+	width: 50%;
+	padding-block: var(--s-md);
+}
+.nutrition__tabel td:nth-child(1) {
+	padding-inline: var(--s-xl);
+}
+.nutrition__tabel td:nth-child(2) {
+	color: var(--brown-800);
+	font-weight: var(--f-bolder);
+}
+
+/* 
+	========== BREAKPOINTS ==========
+*/
+@media (max-width: 420px) {
+	.container {
+		padding-block-start: 0px;
+	}
+
+	.banner {
+		border-radius: 0px;
+	}
+}
