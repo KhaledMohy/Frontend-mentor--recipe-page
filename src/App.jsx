@@ -6,7 +6,7 @@ import RecipeHeader from './sections/RecipeHeader';
 import RecipeIngredients from './sections/RecipeIngredients';
 import RecipeInstructions from './sections/RecipeInstructions';
 import RecipeNutrition from './sections/RecipeNutrition';
-import LineBreak from './components/lineBreak';
+import LineBreak from './components/LineBreak';
 
 const recipe = {
 	title: 'Simple Omelette Recipe',
